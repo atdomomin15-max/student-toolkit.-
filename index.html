@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Toolkit</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+
+      <a href="#" class="logo">Student Toolkit</a>
+
+      <button id="menuBtn" class="menu-btn" type="button">
+        ☰
+      </button>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+
+        <h1>Simple tools for smarter studying.</h1>
+
+        <p>
+          Free calculators and useful tools designed for students.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- Advertisement -->
+    <div class="container">
+      <div class="ad-box">
+        Advertisement
+      </div>
+    </div>
+
+
+    <!-- Tools -->
+    <section id="tools" class="tools-section">
+
+      <div class="container">
+
+        <h2>Student Tools</h2>
+
+        <div class="tools-grid">
+
+
+          <!-- Percentage Calculator -->
+          <div class="tool-card">
+
+            <h3>Percentage Calculator</h3>
+
+            <p>Calculate what percentage one number is of another.</p>
+
+            <input
+              id="percentValue"
+              type="number"
+              placeholder="Your marks"
+            >
+
+            <input
+              id="percentTotal"
+              type="number"
+              placeholder="Total marks"
+            >
+
+            <button id="percentBtn" type="button">
+              Calculate
+            </button>
+
+            <div id="percentResult" class="result">
+              Result will appear here
+            </div>
+
+          </div>
+
+
+          <!-- Grade Calculator -->
+          <div class="tool-card">
+
+            <h3>Grade Calculator</h3>
+
+            <p>Calculate your percentage and grade.</p>
+
+            <input
+              id="gradeObtained"
+              type="number"
+              placeholder="Marks obtained"
+            >
+
+            <input
+              id="gradeTotal"
+              type="number"
+              placeholder="Maximum marks"
+            >
+
+            <button id="gradeBtn" type="button">
+              Calculate Grade
+            </button>
+
+            <div id="gradeResult" class="result">
+              Result will appear here
+            </div>
+
+          </div>
+
+
+          <!-- Study Timer -->
+          <div class="tool-card">
+
+            <h3>25-Minute Study Timer</h3>
+
+            <p>Use a simple focused study session.</p>
+
+            <div id="timerDisplay" class="timer">
+              25:00
+            </div>
+
+            <button id="startTimer" type="button">
+              Start
+            </button>
+
+            <button id="pauseTimer" type="button">
+              Pause
+            </button>
+
+            <button id="resetTimer" type="button">
+              Reset
+            </button>
+
+          </div>
+
+
+          <!-- Unit Converter -->
+          <div class="tool-card">
+
+            <h3>Length Converter</h3>
+
+            <p>Convert between common length units.</p>
+
+            <input
+              id="unitValue"
+              type="number"
+              placeholder="Enter value"
+            >
+
+            <select id="fromUnit">
+
+              <option value="m">Meters</option>
+              <option value="km">Kilometers</option>
+              <option value="cm">Centimeters</option>
+              <option value="ft">Feet</option>
+              <option value="in">Inches</option>
+
+            </select>
+
+            <select id="toUnit">
+
+              <option value="m">Meters</option>
+              <option value="km">Kilometers</option>
+              <option value="cm">Centimeters</option>
+              <option value="ft">Feet</option>
+              <option value="in">Inches</option>
+
+            </select>
+
+            <button id="convertBtn" type="button">
+              Convert
+            </button>
+
+            <div id="convertResult" class="result">
+              Result will appear here
+            </div>
+
+          </div>
+
+
+          <!-- Age Calculator -->
+          <div class="tool-card">
+
+            <h3>Age Calculator</h3>
+
+            <p>Calculate your age from your birth date.</p>
+
+            <input
+              id="birthDate"
+              type="date"
+            >
+
+            <button id="ageBtn" type="button">
+              Calculate Age
+            </button>
+
+            <div id="ageResult" class="result">
+              Result will appear here
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Advertisement -->
+    <div class="container">
+      <div class="ad-box">
+        Advertisement
+      </div>
+    </div>
+
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+      <div class="container">
+
+        <h2>About Student Toolkit</h2>
+
+        <p>
+          Student Toolkit is a free website with simple calculators,
+          study tools, and everyday productivity features for students.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="container">
+
+      <p>
+        © <span id="year"></span> Student Toolkit
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
